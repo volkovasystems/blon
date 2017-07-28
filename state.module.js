@@ -48,7 +48,7 @@
 	@end-submodule-configuration
 
 	@submodule-documentation:
-		Boolean class wrapper.
+		State class wrapper.
 	@end-submodule-documentation
 
 	@include:
