@@ -127,4 +127,4 @@ class State extends Meta {
 	}
 }
 
-module.exports = state;
+module.exports = State;
