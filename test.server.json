@@ -1,0 +1,32 @@
+{
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-01T08:56:19.724Z",
+		"end": "2017-08-01T08:56:19.728Z",
+		"duration": 4
+	},
+	"tests": [
+		{
+			"title": "should return State instance",
+			"fullTitle": "blon `blon( true )` should return State instance",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return State instance",
+			"fullTitle": "blon `blon( true )` should return State instance",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
+}

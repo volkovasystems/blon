@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-01T08:56:20.943Z",
+	"end": "2017-08-01T08:56:45.971Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "blon",
+			"duration": 0,
+			"start": "2017-08-01T08:56:43.830Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "blon",
+			"duration": 1960,
+			"start": "2017-08-01T08:56:43.831Z",
+			"end": "2017-08-01T08:56:45.791Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-01T08:56:43.833Z",
+					"end": "2017-08-01T08:56:43.833Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return State instance"
+				},
+				{
+					"start": "2017-08-01T08:56:45.790Z",
+					"end": "2017-08-01T08:56:45.791Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return State instance"
+				},
+				{
+					"start": "2017-08-01T08:56:45.791Z",
+					"end": "2017-08-01T08:56:45.791Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "blon"
+				}
+			]
+		},
+		{
+			"name": "`blon( true )`",
+			"duration": 1959,
+			"start": "2017-08-01T08:56:43.832Z",
+			"end": "2017-08-01T08:56:45.791Z",
+			"tests": [
+				{
+					"name": "should return State instance",
+					"start": "2017-08-01T08:56:43.832Z",
+					"end": "2017-08-01T08:56:45.790Z",
+					"duration": 1958,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
