@@ -70,16 +70,15 @@ const path = require( "path" );
 
 describe( "blon", ( ) => {
 
-	describe( "`blon( )`", ( ) => {
+	describe( "`blon( true )`", ( ) => {
 		it( "should return State instance", ( ) => {
-			let data = blon( );
+			let data = blon( true );
 
 			assert.equal( typeof data, "object" );
 
 			assert.equal( data.constructor.name, "State" );
 
-			assert.equal( data.valueOf( ), Boolean );
-
+			assert.equal( data.valueOf( ), true );
 		} );
 	} );
 
@@ -92,15 +91,15 @@ describe( "blon", ( ) => {
 
 describe( "blon", ( ) => {
 
-	describe( "`blon( )`", ( ) => {
+	describe( "`blon( true )`", ( ) => {
 		it( "should return State instance", ( ) => {
-			let data = blon( );
+			let data = blon( true );
 
 			assert.equal( typeof data, "object" );
 
 			assert.equal( data.constructor.name, "State" );
 
-			assert.equal( data.valueOf( ), Boolean );
+			assert.equal( data.valueOf( ), true );
 		} );
 	} );
 
@@ -115,15 +114,15 @@ describe( "blon", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( "`blon( )`", ( ) => {
+	describe( "`blon( true )`", ( ) => {
 		it( "should return State instance", ( ) => {
 			//: @ignore:
-			assert.equal( browser.url( bridgeURL ).execute( function( ){ return typeof blon( ); } ).value, "object" );
+			assert.equal( browser.url( bridgeURL ).execute( function( ){ return typeof blon( true ); } ).value, "object" );
 			//: @end-ignore
 
-			assert.equal( browser.url( bridgeURL ).execute( ( ) => blon( ).constructor.name ).value, "State" );
+			assert.equal( browser.url( bridgeURL ).execute( ( ) => blon( true ).constructor.name ).value, "State" );
 
-			assert.equal( browser.url( bridgeURL ).execute( ( ) => `${ blon( ).valueOf( ) }` ).value, "Boolean" );
+			assert.equal( browser.url( bridgeURL ).execute( ( ) => `${ blon( true ).valueOf( ) }` ).value, "true" );
 
 		} );
 	} );

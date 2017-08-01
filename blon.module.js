@@ -69,8 +69,20 @@ const State = require( "./state.js" );
 const State = require( "./state.support.js" );
 //: @end-client
 
-const blon = function blon( ){
-	return Meta.create( State, state );
+const blon = function blon( entity ){
+	/*;
+		@meta-configuration:
+			{
+				"entity:required": "boolean"
+			}
+		@end-meta-configuration
+	*/
+
+	if( typeof entity != "boolean" ){
+		throw new Error( "invalid boolean entity" );
+	}
+
+	return Meta.create( State, entity );
 };
 
 harden( "State", State, blon );

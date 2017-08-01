@@ -48,7 +48,7 @@
 	@end-submodule-configuration
 
 	@submodule-documentation:
-		Boolean class wrapper.
+		State class wrapper.
 	@end-submodule-documentation
 
 	@include:
@@ -60,16 +60,21 @@
 
 const Meta = require( "ehm" )( );
 
-const EMPTY_STRING = "";
-const STATE = Boolean;
-const SERIALIZE_STATE_TAG = "[object Boolean:Boolean]";
-const META_SERIALIZE_STATE_TAG = Meta.create( STATE ).serialize( );
+const BOOLEAN_TYPE = "boolean";
+const BOOLEAN_NAME ="Boolean";
+
+const SERIALIZE_TRUE_TAG = "[boolean Boolean:true]";
+const SERIALIZE_FALSE_TAG = "[boolean Boolean:false]";
+const META_SERIALIZE_TRUE_TAG = Meta.create( true ).serialize( );
+const META_SERIALIZE_FALSE_TAG = Meta.create( false ).serialize( );
 
 class State extends Meta {
 	static [ Symbol.hasInstance ]( instance ){
 		return (
-			instance === STATE ||
-			Meta.instanceOf( instance, this )
+			typeof instance == BOOLEAN_TYPE
+			|| instance instanceof Boolean
+			|| typeof instance == "function" && instance.name === BOOLEAN_NAME
+			|| Meta.instanceOf( instance, this )
 		);
 	}
 
@@ -84,27 +89,65 @@ class State extends Meta {
 			@end-meta-configuration
 		*/
 
-		return Meta.create( this, STATE );
+		let entity = Meta.deserialize( data, parser, this );
+
+		if( entity.isCorrupted( ) ){
+			return entity.revert( );
+		}
+
+		return entity;
 	}
 
-	constructor( ){
-		super( STATE, "State" );
+	static isCompatible( tag ){
+		/*;
+			@meta-configuration:
+				{
+					"tag": "string"
+				}
+			@end-meta-configuration
+		*/
+
+		if( typeof tag != "string" ){
+			return false;
+		}
+
+		return (
+			tag == SERIALIZE_TRUE_TAG
+			|| tag == SERIALIZE_FALSE_TAG
+			|| tag == META_SERIALIZE_TRUE_TAG
+			|| tag == META_SERIALIZE_FALSE_TAG
+		);
 	}
 
-	get [ Meta.OBJECT ]( ){
-		return EMPTY_STRING;
+	constructor( entity ){
+		super( entity, BOOLEAN_NAME );
+	}
+
+	check( entity ){
+		return (
+			typeof entity == BOOLEAN_TYPE
+			|| entity instanceof Boolean
+		);
 	}
 
 	get [ Meta.BOOLEAN ]( ){
-		return false;
+		return this.valueOf( );
 	}
 
 	get [ Meta.STRING ]( ){
-		return EMPTY_STRING;
+		return `${ this.valueOf( ) }`;
 	}
 
 	get [ Meta.NUMBER ]( ){
-		return 0;
+		if( this.valueOf( ) === true ){
+			return Infinity;
+		}
+
+		if( this.valueOf( ) === false ){
+			return NaN;
+		}
+
+		return NaN;
 	}
 
 	serialize( parser ){
@@ -116,14 +159,15 @@ class State extends Meta {
 			@end-meta-configuration
 		*/
 
-		return SERIALIZE_STATE_TAG;
-	}
+		if( this.valueOf( ) === true ){
+			return SERIALIZE_TRUE_TAG;
+		}
 
-	isCompatible( tag ){
-		return (
-			tag === SERIALIZE_STATE_TAG
-			|| tag === META_SERIALIZE_STATE_TAG
-		);
+		if( this.valueOf( ) === false ){
+			return SERIALIZE_FALSE_TAG;
+		}
+
+		return SERIALIZE_FALSE_TAG;
 	}
 }
 

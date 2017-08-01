@@ -1,7 +1,7 @@
 "use strict";
 
 /*;
-	@module-license:
+	@test-license:
 		The MIT License (MIT)
 		@mit-license
 
@@ -25,65 +25,65 @@
 		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 		SOFTWARE.
-	@end-module-license
+	@end-test-license
 
-	@module-configuration:
+	@test-configuration:
 		{
 			"package": "blon",
-			"path": "blon/blon.js",
-			"file": "blon.js",
-			"module": "blon",
+			"path": "blon/test.module.js",
+			"file": "test.module.js",
+			"module": "test",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
-			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-				"Vinse Vinalon <vinsevinalon@gmail.com>"
-			],
-			"repository": "https://github.com/volkovasystems/blon.git",
-			"test": "blon-test.js",
-			"global": true
+			"repository": "https://github.com/volkovasystems/blon.git"
 		}
-	@end-module-configuration
+	@end-test-configuration
 
-	@module-documentation:
-		Boolean object class wrapper.
-	@end-module-documentation
+	@test-documentation:
+
+	@end-test-documentation
 
 	@include:
 		{
-			"ehm": "ehm",
-			"harden": "harden"
+			"assert": "should",
+			"blon": "blon"
 		}
 	@end-include
 */
 
-const harden = require( "harden" );
-
-const Meta = require( "ehm" )( );
+const assert = require( "should" );
 
 //: @server:
-const State = require( "./state.js" );
+const blon = require( "./blon.js" );
 //: @end-server
 
 
 
-const blon = function blon( entity ){
-	/*;
-		@meta-configuration:
-			{
-				"entity:required": "boolean"
-			}
-		@end-meta-configuration
-	*/
 
-	if( typeof entity != "boolean" ){
-		throw new Error( "invalid boolean entity" );
-	}
 
-	return Meta.create( State, entity );
-};
 
-harden( "State", State, blon );
-harden( "State", State, Meta );
+//: @server:
 
-module.exports = blon;
+describe( "blon", ( ) => {
+
+	describe( "`blon( true )`", ( ) => {
+		it( "should return State instance", ( ) => {
+			let data = blon( true );
+
+			assert.equal( typeof data, "object" );
+
+			assert.equal( data.constructor.name, "State" );
+
+			assert.equal( data.valueOf( ), true );
+		} );
+	} );
+
+} );
+
+//: @end-server
+
+
+
+
+
+
