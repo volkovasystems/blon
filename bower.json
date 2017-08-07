@@ -1,6 +1,6 @@
 {
 	"name": "blon",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Boolean object class wrapper.",
 	"main": "blon.deploy.js",
 	"support": "blon.support.js",
@@ -23,11 +23,8 @@
 		"test",
 		"tests"
 	],
-	"resolutions": {
-		"harden": "^0.23.0"
-	},
 	"dependencies": {
-		"ehm": "^0.20.0",
+		"ehm": "^0.21.0",
 		"harden": "^0.23.0"
 	}
 }

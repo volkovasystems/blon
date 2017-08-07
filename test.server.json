@@ -5,15 +5,15 @@
 		"passes": 1,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-02T17:45:17.055Z",
-		"end": "2017-08-02T17:45:17.060Z",
-		"duration": 5
+		"start": "2017-08-07T13:08:26.309Z",
+		"end": "2017-08-07T13:08:26.313Z",
+		"duration": 4
 	},
 	"tests": [
 		{
 			"title": "should return State instance",
 			"fullTitle": "blon `blon( true )` should return State instance",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -24,7 +24,7 @@
 		{
 			"title": "should return State instance",
 			"fullTitle": "blon `blon( true )` should return State instance",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
