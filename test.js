@@ -45,13 +45,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"blon": "blon"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const blon = require( "./blon.js" );
@@ -75,6 +75,28 @@ describe( "blon", ( ) => {
 			assert.equal( data.constructor.name, "State" );
 
 			assert.equal( data.valueOf( ), true );
+		} );
+	} );
+
+	describe( "`blon( true ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			assert.equal( typeof blon( true ).toString( ), "string" );
+		} );
+	} );
+
+	describe( "`blon( true ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			let descriptor = blon( true ).toObject( );
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
 		} );
 	} );
 
