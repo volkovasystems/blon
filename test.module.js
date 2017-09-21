@@ -355,6 +355,50 @@ describe( "blon", ( ) => {
 		} );
 	} );
 
+	describe( "`blon( true ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = blon( true ).toNumber( );
+
+					let test = typeof result == "number" &&
+						result == Infinity;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`blon( true ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = blon( true ).toBoolean( );
+
+					let test = typeof result == "boolean" &&
+						result == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
 	describe( "`blon( true ).toObject( )`", ( ) => {
 		it( "should return object type", ( ) => {
 			//: @ignore:
@@ -376,6 +420,118 @@ describe( "blon", ( ) => {
 			//: @end-ignore
 
 			assert.equal( result, true );
+		} );
+	} );
+
+	describe( "`blon( false )`", ( ) => {
+		it( "should return State instance", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let data = blon( false );
+
+					let test = typeof data == "object" &&
+						data.constructor.name == "State" &&
+						data.valueOf( ) == false;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`blon( false ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let data = blon( false ).toString( );
+
+					let test = typeof data == "string" && data == "false";
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`blon( false ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let data = blon( false ).toNumber( );
+
+					let test = typeof data == "number" &&
+						data.toString( ) == "NaN";
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`blon( false ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = blon( false ).toBoolean( );
+
+					let test = typeof result == "boolean" && result == false;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`blon( false ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let descriptor = blon( false ).toObject( );
+
+					let test = typeof descriptor == "object" &&
+						"type" in descriptor == true
+						"name" in descriptor == true
+						"value" in descriptor == true
+						"format" in descriptor == true;
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+
 		} );
 	} );
 
