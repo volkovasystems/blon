@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 3,
+		"passed": 10,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-09-14T05:34:51.700Z",
-	"end": "2017-09-14T05:35:29.300Z",
+	"start": "2017-09-21T04:00:34.860Z",
+	"end": "2017-09-21T04:09:27.695Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,69 +28,181 @@
 		{
 			"name": "blon",
 			"duration": 0,
-			"start": "2017-09-14T05:35:27.644Z",
+			"start": "2017-09-21T04:09:25.207Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "blon",
-			"duration": 1479,
-			"start": "2017-09-14T05:35:27.645Z",
-			"end": "2017-09-14T05:35:29.124Z",
+			"duration": 2309,
+			"start": "2017-09-21T04:09:25.207Z",
+			"end": "2017-09-21T04:09:27.516Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-09-14T05:35:27.646Z",
-					"end": "2017-09-14T05:35:27.646Z",
+					"start": "2017-09-21T04:09:25.208Z",
+					"end": "2017-09-21T04:09:25.208Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return State instance"
 				},
 				{
-					"start": "2017-09-14T05:35:29.014Z",
-					"end": "2017-09-14T05:35:29.015Z",
+					"start": "2017-09-21T04:09:27.030Z",
+					"end": "2017-09-21T04:09:27.031Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return State instance"
 				},
 				{
-					"start": "2017-09-14T05:35:29.017Z",
-					"end": "2017-09-14T05:35:29.017Z",
+					"start": "2017-09-21T04:09:27.032Z",
+					"end": "2017-09-21T04:09:27.032Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return string type"
 				},
 				{
-					"start": "2017-09-14T05:35:29.072Z",
-					"end": "2017-09-14T05:35:29.073Z",
+					"start": "2017-09-21T04:09:27.085Z",
+					"end": "2017-09-21T04:09:27.085Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.085Z",
+					"end": "2017-09-21T04:09:27.085Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.141Z",
+					"end": "2017-09-21T04:09:27.141Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.142Z",
+					"end": "2017-09-21T04:09:27.142Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.199Z",
+					"end": "2017-09-21T04:09:27.199Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.200Z",
+					"end": "2017-09-21T04:09:27.200Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.256Z",
+					"end": "2017-09-21T04:09:27.256Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.257Z",
+					"end": "2017-09-21T04:09:27.257Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return State instance"
+				},
+				{
+					"start": "2017-09-21T04:09:27.308Z",
+					"end": "2017-09-21T04:09:27.308Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return State instance"
+				},
+				{
+					"start": "2017-09-21T04:09:27.308Z",
+					"end": "2017-09-21T04:09:27.308Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.359Z",
+					"end": "2017-09-21T04:09:27.359Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.361Z",
+					"end": "2017-09-21T04:09:27.362Z",
 					"duration": 1,
-					"title": "\"after each\" hook",
+					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
-					"associatedTest": "should return string type"
+					"associatedTest": "should return number type"
 				},
 				{
-					"start": "2017-09-14T05:35:29.073Z",
-					"end": "2017-09-14T05:35:29.073Z",
+					"start": "2017-09-21T04:09:27.410Z",
+					"end": "2017-09-21T04:09:27.410Z",
 					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return number type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.410Z",
+					"end": "2017-09-21T04:09:27.410Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.461Z",
+					"end": "2017-09-21T04:09:27.461Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return boolean type"
+				},
+				{
+					"start": "2017-09-21T04:09:27.461Z",
+					"end": "2017-09-21T04:09:27.462Z",
+					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return object type"
 				},
 				{
-					"start": "2017-09-14T05:35:29.124Z",
-					"end": "2017-09-14T05:35:29.124Z",
+					"start": "2017-09-21T04:09:27.516Z",
+					"end": "2017-09-21T04:09:27.516Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return object type"
 				},
 				{
-					"start": "2017-09-14T05:35:29.124Z",
-					"end": "2017-09-14T05:35:29.124Z",
-					"duration": 0,
+					"start": "2017-09-21T04:09:27.516Z",
+					"end": "2017-09-21T04:09:27.517Z",
+					"duration": 1,
 					"title": "\"after all\" hook",
 					"associatedSuite": "blon"
 				}
@@ -98,15 +210,15 @@
 		},
 		{
 			"name": "`blon( true )`",
-			"duration": 1371,
-			"start": "2017-09-14T05:35:27.645Z",
-			"end": "2017-09-14T05:35:29.016Z",
+			"duration": 1824,
+			"start": "2017-09-21T04:09:25.207Z",
+			"end": "2017-09-21T04:09:27.031Z",
 			"tests": [
 				{
 					"name": "should return State instance",
-					"start": "2017-09-14T05:35:27.646Z",
-					"end": "2017-09-14T05:35:29.013Z",
-					"duration": 1367,
+					"start": "2017-09-21T04:09:25.208Z",
+					"end": "2017-09-21T04:09:27.030Z",
+					"duration": 1822,
 					"state": "pass"
 				}
 			],
@@ -114,14 +226,30 @@
 		},
 		{
 			"name": "`blon( true ).toString( )`",
-			"duration": 57,
-			"start": "2017-09-14T05:35:29.016Z",
-			"end": "2017-09-14T05:35:29.073Z",
+			"duration": 54,
+			"start": "2017-09-21T04:09:27.031Z",
+			"end": "2017-09-21T04:09:27.085Z",
 			"tests": [
 				{
 					"name": "should return string type",
-					"start": "2017-09-14T05:35:29.016Z",
-					"end": "2017-09-14T05:35:29.072Z",
+					"start": "2017-09-21T04:09:27.032Z",
+					"end": "2017-09-21T04:09:27.085Z",
+					"duration": 53,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`blon( true ).toNumber( )`",
+			"duration": 57,
+			"start": "2017-09-21T04:09:27.085Z",
+			"end": "2017-09-21T04:09:27.142Z",
+			"tests": [
+				{
+					"name": "should return number type",
+					"start": "2017-09-21T04:09:27.085Z",
+					"end": "2017-09-21T04:09:27.141Z",
 					"duration": 56,
 					"state": "pass"
 				}
@@ -129,16 +257,112 @@
 			"hooks": []
 		},
 		{
+			"name": "`blon( true ).toBoolean( )`",
+			"duration": 58,
+			"start": "2017-09-21T04:09:27.142Z",
+			"end": "2017-09-21T04:09:27.200Z",
+			"tests": [
+				{
+					"name": "should return boolean type",
+					"start": "2017-09-21T04:09:27.142Z",
+					"end": "2017-09-21T04:09:27.199Z",
+					"duration": 57,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
 			"name": "`blon( true ).toObject( )`",
-			"duration": 51,
-			"start": "2017-09-14T05:35:29.073Z",
-			"end": "2017-09-14T05:35:29.124Z",
+			"duration": 56,
+			"start": "2017-09-21T04:09:27.200Z",
+			"end": "2017-09-21T04:09:27.256Z",
 			"tests": [
 				{
 					"name": "should return object type",
-					"start": "2017-09-14T05:35:29.073Z",
-					"end": "2017-09-14T05:35:29.124Z",
+					"start": "2017-09-21T04:09:27.200Z",
+					"end": "2017-09-21T04:09:27.256Z",
+					"duration": 56,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`blon( false )`",
+			"duration": 52,
+			"start": "2017-09-21T04:09:27.256Z",
+			"end": "2017-09-21T04:09:27.308Z",
+			"tests": [
+				{
+					"name": "should return State instance",
+					"start": "2017-09-21T04:09:27.257Z",
+					"end": "2017-09-21T04:09:27.308Z",
 					"duration": 51,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`blon( false ).toString( )`",
+			"duration": 52,
+			"start": "2017-09-21T04:09:27.308Z",
+			"end": "2017-09-21T04:09:27.360Z",
+			"tests": [
+				{
+					"name": "should return string type",
+					"start": "2017-09-21T04:09:27.308Z",
+					"end": "2017-09-21T04:09:27.359Z",
+					"duration": 51,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`blon( false ).toNumber( )`",
+			"duration": 50,
+			"start": "2017-09-21T04:09:27.360Z",
+			"end": "2017-09-21T04:09:27.410Z",
+			"tests": [
+				{
+					"name": "should return number type",
+					"start": "2017-09-21T04:09:27.360Z",
+					"end": "2017-09-21T04:09:27.410Z",
+					"duration": 50,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`blon( false ).toBoolean( )`",
+			"duration": 51,
+			"start": "2017-09-21T04:09:27.410Z",
+			"end": "2017-09-21T04:09:27.461Z",
+			"tests": [
+				{
+					"name": "should return boolean type",
+					"start": "2017-09-21T04:09:27.410Z",
+					"end": "2017-09-21T04:09:27.461Z",
+					"duration": 51,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`blon( false ).toObject( )`",
+			"duration": 55,
+			"start": "2017-09-21T04:09:27.461Z",
+			"end": "2017-09-21T04:09:27.516Z",
+			"tests": [
+				{
+					"name": "should return object type",
+					"start": "2017-09-21T04:09:27.461Z",
+					"end": "2017-09-21T04:09:27.515Z",
+					"duration": 54,
 					"state": "pass"
 				}
 			],

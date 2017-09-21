@@ -84,6 +84,28 @@ describe( "blon", ( ) => {
 		} );
 	} );
 
+	describe( "`blon( true ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			let result = blon( true ).toNumber( );
+
+			assert.equal( typeof result, "number" );
+
+			assert.equal( result, Infinity );
+
+		} );
+	} );
+
+	describe( "`blon( true ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			let result = blon( true ).toBoolean( );
+
+			assert.equal( typeof result, "boolean" );
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
 	describe( "`blon( true ).toObject( )`", ( ) => {
 		it( "should return object type", ( ) => {
 			let descriptor = blon( true ).toObject( );
@@ -97,6 +119,68 @@ describe( "blon", ( ) => {
 			assert.equal( "value" in descriptor, true );
 
 			assert.equal( "format" in descriptor, true );
+		} );
+	} );
+
+	describe( "`blon( false )`", ( ) => {
+		it( "should return State instance", ( ) => {
+			let data = blon( false );
+
+			assert.equal( typeof data, "object" );
+
+			assert.equal( data.constructor.name, "State" );
+
+			assert.equal( data.valueOf( ), false );
+		} );
+	} );
+
+	describe( "`blon( false ).toString( )`", ( ) => {
+		it( "should return string type", ( ) => {
+			let result = blon( false ).toString( );
+
+			assert.equal( typeof result, "string" );
+
+			assert.equal( result, "false" );
+
+		} );
+	} );
+
+	describe( "`blon( false ).toNumber( )`", ( ) => {
+		it( "should return number type", ( ) => {
+			let result = blon( false ).toNumber( );
+
+			assert.equal( typeof result, "number" );
+
+			assert.equal( result.toString( ), "NaN" );
+
+		} );
+	} );
+
+	describe( "`blon( false ).toBoolean( )`", ( ) => {
+		it( "should return boolean type", ( ) => {
+			let result = blon( false ).toBoolean( );
+
+			assert.equal( typeof result, "boolean" );
+
+			assert.equal( result, false );
+
+		} );
+	} );
+
+	describe( "`blon( false ).toObject( )`", ( ) => {
+		it( "should return object type", ( ) => {
+			let descriptor = blon( false ).toObject( );
+
+			assert.equal( typeof descriptor, "object" );
+
+			assert.equal( "type" in descriptor, true );
+
+			assert.equal( "name" in descriptor, true );
+
+			assert.equal( "value" in descriptor, true );
+
+			assert.equal( "format" in descriptor, true );
+
 		} );
 	} );
 

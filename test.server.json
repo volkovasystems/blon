@@ -1,19 +1,19 @@
 {
 	"stats": {
-		"suites": 4,
-		"tests": 3,
-		"passes": 3,
+		"suites": 11,
+		"tests": 10,
+		"passes": 10,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-09-14T05:34:50.511Z",
-		"end": "2017-09-14T05:34:50.516Z",
-		"duration": 5
+		"start": "2017-09-21T04:00:32.928Z",
+		"end": "2017-09-21T04:00:32.934Z",
+		"duration": 6
 	},
 	"tests": [
 		{
 			"title": "should return State instance",
 			"fullTitle": "blon `blon( true )` should return State instance",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -25,8 +25,57 @@
 			"err": {}
 		},
 		{
+			"title": "should return number type",
+			"fullTitle": "blon `blon( true ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "blon `blon( true ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
 			"title": "should return object type",
 			"fullTitle": "blon `blon( true ).toObject( )` should return object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return State instance",
+			"fullTitle": "blon `blon( false )` should return State instance",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "blon `blon( false ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "blon `blon( false ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "blon `blon( false ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "blon `blon( false ).toObject( )` should return object type",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
@@ -38,7 +87,7 @@
 		{
 			"title": "should return State instance",
 			"fullTitle": "blon `blon( true )` should return State instance",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -50,8 +99,57 @@
 			"err": {}
 		},
 		{
+			"title": "should return number type",
+			"fullTitle": "blon `blon( true ).toNumber( )` should return number type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "blon `blon( true ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
 			"title": "should return object type",
 			"fullTitle": "blon `blon( true ).toObject( )` should return object type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return State instance",
+			"fullTitle": "blon `blon( false )` should return State instance",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return string type",
+			"fullTitle": "blon `blon( false ).toString( )` should return string type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return number type",
+			"fullTitle": "blon `blon( false ).toNumber( )` should return number type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return boolean type",
+			"fullTitle": "blon `blon( false ).toBoolean( )` should return boolean type",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return object type",
+			"fullTitle": "blon `blon( false ).toObject( )` should return object type",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
