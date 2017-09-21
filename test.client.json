@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-09-21T04:00:34.860Z",
-	"end": "2017-09-21T04:09:27.695Z",
+	"start": "2017-09-21T05:47:51.252Z",
+	"end": "2017-09-21T05:48:44.812Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,181 +28,181 @@
 		{
 			"name": "blon",
 			"duration": 0,
-			"start": "2017-09-21T04:09:25.207Z",
+			"start": "2017-09-21T05:48:43.088Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "blon",
-			"duration": 2309,
-			"start": "2017-09-21T04:09:25.207Z",
-			"end": "2017-09-21T04:09:27.516Z",
+			"duration": 1541,
+			"start": "2017-09-21T05:48:43.088Z",
+			"end": "2017-09-21T05:48:44.629Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-09-21T04:09:25.208Z",
-					"end": "2017-09-21T04:09:25.208Z",
-					"duration": 0,
+					"start": "2017-09-21T05:48:43.089Z",
+					"end": "2017-09-21T05:48:43.090Z",
+					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return State instance"
 				},
 				{
-					"start": "2017-09-21T04:09:27.030Z",
-					"end": "2017-09-21T04:09:27.031Z",
+					"start": "2017-09-21T05:48:44.087Z",
+					"end": "2017-09-21T05:48:44.088Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return State instance"
 				},
 				{
-					"start": "2017-09-21T04:09:27.032Z",
-					"end": "2017-09-21T04:09:27.032Z",
+					"start": "2017-09-21T05:48:44.090Z",
+					"end": "2017-09-21T05:48:44.090Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return string type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.085Z",
-					"end": "2017-09-21T04:09:27.085Z",
-					"duration": 0,
+					"start": "2017-09-21T05:48:44.142Z",
+					"end": "2017-09-21T05:48:44.143Z",
+					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return string type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.085Z",
-					"end": "2017-09-21T04:09:27.085Z",
+					"start": "2017-09-21T05:48:44.143Z",
+					"end": "2017-09-21T05:48:44.143Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return number type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.141Z",
-					"end": "2017-09-21T04:09:27.141Z",
+					"start": "2017-09-21T05:48:44.206Z",
+					"end": "2017-09-21T05:48:44.206Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return number type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.142Z",
-					"end": "2017-09-21T04:09:27.142Z",
+					"start": "2017-09-21T05:48:44.206Z",
+					"end": "2017-09-21T05:48:44.206Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return boolean type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.199Z",
-					"end": "2017-09-21T04:09:27.199Z",
+					"start": "2017-09-21T05:48:44.269Z",
+					"end": "2017-09-21T05:48:44.269Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return boolean type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.200Z",
-					"end": "2017-09-21T04:09:27.200Z",
+					"start": "2017-09-21T05:48:44.269Z",
+					"end": "2017-09-21T05:48:44.269Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return object type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.256Z",
-					"end": "2017-09-21T04:09:27.256Z",
+					"start": "2017-09-21T05:48:44.327Z",
+					"end": "2017-09-21T05:48:44.327Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return object type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.257Z",
-					"end": "2017-09-21T04:09:27.257Z",
+					"start": "2017-09-21T05:48:44.328Z",
+					"end": "2017-09-21T05:48:44.328Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return State instance"
 				},
 				{
-					"start": "2017-09-21T04:09:27.308Z",
-					"end": "2017-09-21T04:09:27.308Z",
+					"start": "2017-09-21T05:48:44.388Z",
+					"end": "2017-09-21T05:48:44.388Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return State instance"
 				},
 				{
-					"start": "2017-09-21T04:09:27.308Z",
-					"end": "2017-09-21T04:09:27.308Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "blon",
-					"associatedTest": "should return string type"
-				},
-				{
-					"start": "2017-09-21T04:09:27.359Z",
-					"end": "2017-09-21T04:09:27.359Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "blon",
-					"associatedTest": "should return string type"
-				},
-				{
-					"start": "2017-09-21T04:09:27.361Z",
-					"end": "2017-09-21T04:09:27.362Z",
+					"start": "2017-09-21T05:48:44.388Z",
+					"end": "2017-09-21T05:48:44.389Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T05:48:44.446Z",
+					"end": "2017-09-21T05:48:44.446Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "blon",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-09-21T05:48:44.448Z",
+					"end": "2017-09-21T05:48:44.448Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "blon",
 					"associatedTest": "should return number type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.410Z",
-					"end": "2017-09-21T04:09:27.410Z",
+					"start": "2017-09-21T05:48:44.502Z",
+					"end": "2017-09-21T05:48:44.502Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return number type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.410Z",
-					"end": "2017-09-21T04:09:27.410Z",
+					"start": "2017-09-21T05:48:44.503Z",
+					"end": "2017-09-21T05:48:44.503Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return boolean type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.461Z",
-					"end": "2017-09-21T04:09:27.461Z",
-					"duration": 0,
+					"start": "2017-09-21T05:48:44.560Z",
+					"end": "2017-09-21T05:48:44.561Z",
+					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return boolean type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.461Z",
-					"end": "2017-09-21T04:09:27.462Z",
-					"duration": 1,
+					"start": "2017-09-21T05:48:44.561Z",
+					"end": "2017-09-21T05:48:44.563Z",
+					"duration": 2,
 					"title": "\"before each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return object type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.516Z",
-					"end": "2017-09-21T04:09:27.516Z",
+					"start": "2017-09-21T05:48:44.629Z",
+					"end": "2017-09-21T05:48:44.629Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "blon",
 					"associatedTest": "should return object type"
 				},
 				{
-					"start": "2017-09-21T04:09:27.516Z",
-					"end": "2017-09-21T04:09:27.517Z",
-					"duration": 1,
+					"start": "2017-09-21T05:48:44.630Z",
+					"end": "2017-09-21T05:48:44.630Z",
+					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "blon"
 				}
@@ -210,15 +210,15 @@
 		},
 		{
 			"name": "`blon( true )`",
-			"duration": 1824,
-			"start": "2017-09-21T04:09:25.207Z",
-			"end": "2017-09-21T04:09:27.031Z",
+			"duration": 999,
+			"start": "2017-09-21T05:48:43.089Z",
+			"end": "2017-09-21T05:48:44.088Z",
 			"tests": [
 				{
 					"name": "should return State instance",
-					"start": "2017-09-21T04:09:25.208Z",
-					"end": "2017-09-21T04:09:27.030Z",
-					"duration": 1822,
+					"start": "2017-09-21T05:48:43.089Z",
+					"end": "2017-09-21T05:48:44.087Z",
+					"duration": 998,
 					"state": "pass"
 				}
 			],
@@ -226,15 +226,15 @@
 		},
 		{
 			"name": "`blon( true ).toString( )`",
-			"duration": 54,
-			"start": "2017-09-21T04:09:27.031Z",
-			"end": "2017-09-21T04:09:27.085Z",
+			"duration": 55,
+			"start": "2017-09-21T05:48:44.088Z",
+			"end": "2017-09-21T05:48:44.143Z",
 			"tests": [
 				{
 					"name": "should return string type",
-					"start": "2017-09-21T04:09:27.032Z",
-					"end": "2017-09-21T04:09:27.085Z",
-					"duration": 53,
+					"start": "2017-09-21T05:48:44.088Z",
+					"end": "2017-09-21T05:48:44.142Z",
+					"duration": 54,
 					"state": "pass"
 				}
 			],
@@ -242,15 +242,15 @@
 		},
 		{
 			"name": "`blon( true ).toNumber( )`",
-			"duration": 57,
-			"start": "2017-09-21T04:09:27.085Z",
-			"end": "2017-09-21T04:09:27.142Z",
+			"duration": 63,
+			"start": "2017-09-21T05:48:44.143Z",
+			"end": "2017-09-21T05:48:44.206Z",
 			"tests": [
 				{
 					"name": "should return number type",
-					"start": "2017-09-21T04:09:27.085Z",
-					"end": "2017-09-21T04:09:27.141Z",
-					"duration": 56,
+					"start": "2017-09-21T05:48:44.143Z",
+					"end": "2017-09-21T05:48:44.206Z",
+					"duration": 63,
 					"state": "pass"
 				}
 			],
@@ -258,15 +258,15 @@
 		},
 		{
 			"name": "`blon( true ).toBoolean( )`",
-			"duration": 58,
-			"start": "2017-09-21T04:09:27.142Z",
-			"end": "2017-09-21T04:09:27.200Z",
+			"duration": 63,
+			"start": "2017-09-21T05:48:44.206Z",
+			"end": "2017-09-21T05:48:44.269Z",
 			"tests": [
 				{
 					"name": "should return boolean type",
-					"start": "2017-09-21T04:09:27.142Z",
-					"end": "2017-09-21T04:09:27.199Z",
-					"duration": 57,
+					"start": "2017-09-21T05:48:44.206Z",
+					"end": "2017-09-21T05:48:44.268Z",
+					"duration": 62,
 					"state": "pass"
 				}
 			],
@@ -274,15 +274,15 @@
 		},
 		{
 			"name": "`blon( true ).toObject( )`",
-			"duration": 56,
-			"start": "2017-09-21T04:09:27.200Z",
-			"end": "2017-09-21T04:09:27.256Z",
+			"duration": 58,
+			"start": "2017-09-21T05:48:44.269Z",
+			"end": "2017-09-21T05:48:44.327Z",
 			"tests": [
 				{
 					"name": "should return object type",
-					"start": "2017-09-21T04:09:27.200Z",
-					"end": "2017-09-21T04:09:27.256Z",
-					"duration": 56,
+					"start": "2017-09-21T05:48:44.269Z",
+					"end": "2017-09-21T05:48:44.327Z",
+					"duration": 58,
 					"state": "pass"
 				}
 			],
@@ -290,15 +290,15 @@
 		},
 		{
 			"name": "`blon( false )`",
-			"duration": 52,
-			"start": "2017-09-21T04:09:27.256Z",
-			"end": "2017-09-21T04:09:27.308Z",
+			"duration": 60,
+			"start": "2017-09-21T05:48:44.328Z",
+			"end": "2017-09-21T05:48:44.388Z",
 			"tests": [
 				{
 					"name": "should return State instance",
-					"start": "2017-09-21T04:09:27.257Z",
-					"end": "2017-09-21T04:09:27.308Z",
-					"duration": 51,
+					"start": "2017-09-21T05:48:44.328Z",
+					"end": "2017-09-21T05:48:44.388Z",
+					"duration": 60,
 					"state": "pass"
 				}
 			],
@@ -306,15 +306,15 @@
 		},
 		{
 			"name": "`blon( false ).toString( )`",
-			"duration": 52,
-			"start": "2017-09-21T04:09:27.308Z",
-			"end": "2017-09-21T04:09:27.360Z",
+			"duration": 58,
+			"start": "2017-09-21T05:48:44.388Z",
+			"end": "2017-09-21T05:48:44.446Z",
 			"tests": [
 				{
 					"name": "should return string type",
-					"start": "2017-09-21T04:09:27.308Z",
-					"end": "2017-09-21T04:09:27.359Z",
-					"duration": 51,
+					"start": "2017-09-21T05:48:44.388Z",
+					"end": "2017-09-21T05:48:44.446Z",
+					"duration": 58,
 					"state": "pass"
 				}
 			],
@@ -322,15 +322,15 @@
 		},
 		{
 			"name": "`blon( false ).toNumber( )`",
-			"duration": 50,
-			"start": "2017-09-21T04:09:27.360Z",
-			"end": "2017-09-21T04:09:27.410Z",
+			"duration": 56,
+			"start": "2017-09-21T05:48:44.446Z",
+			"end": "2017-09-21T05:48:44.502Z",
 			"tests": [
 				{
 					"name": "should return number type",
-					"start": "2017-09-21T04:09:27.360Z",
-					"end": "2017-09-21T04:09:27.410Z",
-					"duration": 50,
+					"start": "2017-09-21T05:48:44.447Z",
+					"end": "2017-09-21T05:48:44.502Z",
+					"duration": 55,
 					"state": "pass"
 				}
 			],
@@ -338,15 +338,15 @@
 		},
 		{
 			"name": "`blon( false ).toBoolean( )`",
-			"duration": 51,
-			"start": "2017-09-21T04:09:27.410Z",
-			"end": "2017-09-21T04:09:27.461Z",
+			"duration": 58,
+			"start": "2017-09-21T05:48:44.503Z",
+			"end": "2017-09-21T05:48:44.561Z",
 			"tests": [
 				{
 					"name": "should return boolean type",
-					"start": "2017-09-21T04:09:27.410Z",
-					"end": "2017-09-21T04:09:27.461Z",
-					"duration": 51,
+					"start": "2017-09-21T05:48:44.503Z",
+					"end": "2017-09-21T05:48:44.560Z",
+					"duration": 57,
 					"state": "pass"
 				}
 			],
@@ -354,15 +354,15 @@
 		},
 		{
 			"name": "`blon( false ).toObject( )`",
-			"duration": 55,
-			"start": "2017-09-21T04:09:27.461Z",
-			"end": "2017-09-21T04:09:27.516Z",
+			"duration": 68,
+			"start": "2017-09-21T05:48:44.561Z",
+			"end": "2017-09-21T05:48:44.629Z",
 			"tests": [
 				{
 					"name": "should return object type",
-					"start": "2017-09-21T04:09:27.461Z",
-					"end": "2017-09-21T04:09:27.515Z",
-					"duration": 54,
+					"start": "2017-09-21T05:48:44.561Z",
+					"end": "2017-09-21T05:48:44.628Z",
+					"duration": 67,
 					"state": "pass"
 				}
 			],

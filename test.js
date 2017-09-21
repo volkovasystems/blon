@@ -75,12 +75,18 @@ describe( "blon", ( ) => {
 			assert.equal( data.constructor.name, "State" );
 
 			assert.equal( data.valueOf( ), true );
+
 		} );
 	} );
 
 	describe( "`blon( true ).toString( )`", ( ) => {
 		it( "should return string type", ( ) => {
-			assert.equal( typeof blon( true ).toString( ), "string" );
+			let result = blon( true ).toString( );
+
+			assert.equal( typeof result, "string" );
+
+			assert.equal( result, "true" );
+
 		} );
 	} );
 
@@ -119,6 +125,7 @@ describe( "blon", ( ) => {
 			assert.equal( "value" in descriptor, true );
 
 			assert.equal( "format" in descriptor, true );
+
 		} );
 	} );
 
@@ -131,6 +138,7 @@ describe( "blon", ( ) => {
 			assert.equal( data.constructor.name, "State" );
 
 			assert.equal( data.valueOf( ), false );
+
 		} );
 	} );
 

@@ -5,22 +5,22 @@
 		"passes": 10,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-09-21T04:00:32.928Z",
-		"end": "2017-09-21T04:00:32.934Z",
-		"duration": 6
+		"start": "2017-09-21T05:47:49.538Z",
+		"end": "2017-09-21T05:47:49.547Z",
+		"duration": 9
 	},
 	"tests": [
 		{
 			"title": "should return State instance",
 			"fullTitle": "blon `blon( true )` should return State instance",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should return string type",
 			"fullTitle": "blon `blon( true ).toString( )` should return string type",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -34,7 +34,7 @@
 		{
 			"title": "should return boolean type",
 			"fullTitle": "blon `blon( true ).toBoolean( )` should return boolean type",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -62,14 +62,14 @@
 		{
 			"title": "should return number type",
 			"fullTitle": "blon `blon( false ).toNumber( )` should return number type",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should return boolean type",
 			"fullTitle": "blon `blon( false ).toBoolean( )` should return boolean type",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -87,14 +87,14 @@
 		{
 			"title": "should return State instance",
 			"fullTitle": "blon `blon( true )` should return State instance",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should return string type",
 			"fullTitle": "blon `blon( true ).toString( )` should return string type",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -108,7 +108,7 @@
 		{
 			"title": "should return boolean type",
 			"fullTitle": "blon `blon( true ).toBoolean( )` should return boolean type",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -136,14 +136,14 @@
 		{
 			"title": "should return number type",
 			"fullTitle": "blon `blon( false ).toNumber( )` should return number type",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should return boolean type",
 			"fullTitle": "blon `blon( false ).toBoolean( )` should return boolean type",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
