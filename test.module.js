@@ -79,12 +79,18 @@ describe( "blon", ( ) => {
 			assert.equal( data.constructor.name, "State" );
 
 			assert.equal( data.valueOf( ), true );
+
 		} );
 	} );
 
 	describe( "`blon( true ).toString( )`", ( ) => {
 		it( "should return string type", ( ) => {
-			assert.equal( typeof blon( true ).toString( ), "string" );
+			let result = blon( true ).toString( );
+
+			assert.equal( typeof result, "string" );
+
+			assert.equal( result, "true" );
+
 		} );
 	} );
 
@@ -123,6 +129,7 @@ describe( "blon", ( ) => {
 			assert.equal( "value" in descriptor, true );
 
 			assert.equal( "format" in descriptor, true );
+
 		} );
 	} );
 
@@ -135,6 +142,7 @@ describe( "blon", ( ) => {
 			assert.equal( data.constructor.name, "State" );
 
 			assert.equal( data.valueOf( ), false );
+
 		} );
 	} );
 
@@ -206,12 +214,18 @@ describe( "blon", ( ) => {
 			assert.equal( data.constructor.name, "State" );
 
 			assert.equal( data.valueOf( ), true );
+
 		} );
 	} );
 
 	describe( "`blon( true ).toString( )`", ( ) => {
 		it( "should return string type", ( ) => {
-			assert.equal( typeof blon( true ).toString( ), "string" );
+			let result = blon( true ).toString( );
+
+			assert.equal( typeof result, "string" );
+
+			assert.equal( result, "true" );
+
 		} );
 	} );
 
@@ -250,6 +264,7 @@ describe( "blon", ( ) => {
 			assert.equal( "value" in descriptor, true );
 
 			assert.equal( "format" in descriptor, true );
+
 		} );
 	} );
 
@@ -262,6 +277,7 @@ describe( "blon", ( ) => {
 			assert.equal( data.constructor.name, "State" );
 
 			assert.equal( data.valueOf( ), false );
+
 		} );
 	} );
 
@@ -345,13 +361,19 @@ describe( "blon", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-					return typeof blon( true ).toString( );
+					let data = blon( true ).toString( );
+
+					let test = typeof data == "string" &&
+						data == "true";
+
+					return test;
 				}
 
 			).value;
 			//: @end-ignore
 
-			assert.equal( result, "string" );
+			assert.equal( result, true );
+			
 		} );
 	} );
 
